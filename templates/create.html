@@ -1,1 +1,43 @@
-<h1>Insert Page</h1>
+{% extends 'master.html' %}
+{% include 'header.html' %}
+{% block title %}Add Students{% endblock %}
+{% block body %}
+
+<div class="container">
+    <form method="post" action="">
+    <table class="table">
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" name="first_name" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="last_name" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="text" name="email" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="text" name="password" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>
+        Male: <input type = "radio" name="gender" value="male">
+        Female: <input type="radio" name="gender" value="female">
+        </td>
+    </tr>
+    <tr>
+        <td>Hobbies</td>
+        Cricket: <input type = "checkbox" name="hobbies" value="male">
+        Movies: <input type="checkbox" name="hobbies" value="female">
+        TV: <input type="checkbox" name="hobbies" class="form-control"></td>
+    </tr>
+    </table>    
+
+    </form>
+</div>
+
+{% endblock %}
